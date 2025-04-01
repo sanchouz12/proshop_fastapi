@@ -29,10 +29,10 @@ function ProductScreen({ match, history }) {
     } = productReviewCreate
 
     useEffect(() => {
+        dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
         if (successProductReview) {
             setRating(0)
             setComment('')
-            dispatch({ type: PRODUCT_CREATE_REVIEW_RESET })
         }
 
         dispatch(listProductDetails(match.params.id))
@@ -193,7 +193,7 @@ function ProductScreen({ match, history }) {
                                                         <Form.Label>Review</Form.Label>
                                                         <Form.Control
                                                             as='textarea'
-                                                            row='5'
+                                                            rows='5'
                                                             value={comment}
                                                             onChange={(e) => setComment(e.target.value)}
                                                         ></Form.Control>
