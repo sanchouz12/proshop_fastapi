@@ -11,3 +11,9 @@ They include the following PRs:
 - [Solve payment method issue correctly](https://github.com/divanov11/proshop_django/pull/32)
 - [Make user not available to placeorder with 0 items](https://github.com/divanov11/proshop_django/pull/33)
 - [reset the review every time we render ProductScreen](https://github.com/divanov11/proshop_django/pull/34)
+
+## Tools
+- Python version and env management using [uv](https://github.com/astral-sh/uv)
+- Linting and formatting using [ruff](https://github.com/astral-sh/ruff)
+- Type checking using [pyright](https://github.com/microsoft/pyright)
+- Git hooks using [pre-commit](https://github.com/pre-commit/pre-commit)
