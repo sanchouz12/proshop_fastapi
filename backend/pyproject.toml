@@ -19,7 +19,7 @@ dev = [
 ]
 
 [tool.uv]
-required-version = "==0.7.9"
+required-version = "==0.7.19"
 
 [tool.pyright]
 venvPath = "."
